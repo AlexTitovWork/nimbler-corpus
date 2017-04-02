@@ -41,7 +41,7 @@ public class CorpusDataClassTest {
      */
     @Test
     public void testReadDataLemmaPosFormat() throws Exception {
-        System.out.println("readDataLemmaPosFormat");
+        System.out.println("read Data Lemma Position Format");
         CorpusDataClass instance = new CorpusDataClass();
         instance.readDataLemmaPosFormat();
         // TODO review the generated test code and remove the default call to fail.
