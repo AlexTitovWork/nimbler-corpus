@@ -72,10 +72,10 @@ public class CorpusDataClass {
 //      break;
     }
     //WRITER REALIZE AND MARK UP WORDS
-     System.out.println("\nPrint only NOUN colacation from internal file\n");
+     System.out.println("\nPrint only NOUN colacation from internal file \n");
      for(String element : noun){
          /**
-         * Print only noun form resource data
+         * Print only noun  resource data
          */
          System.out.println(element);
     }
