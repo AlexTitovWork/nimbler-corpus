@@ -37,7 +37,7 @@ public class CorpusDataClassTest {
     }
 
     /**
-     * Test of readDataLemmaPosFormat method, of class CorpusDataClass.
+     * Test of readDataLemmaPosFormat()    method, of class CorpusDataClass.
      */
     @Test
     public void testReadDataLemmaPosFormat() throws Exception {
