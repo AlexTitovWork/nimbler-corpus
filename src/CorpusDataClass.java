@@ -35,7 +35,8 @@ public class CorpusDataClass {
     URL resource = getClass().getClassLoader().getResource("META-INF/resources/FiltredEntiresToDataBase.txt");
     System.out.println("URL " + resource);
     /**
-     * Use a scanner to read in the data line by line
+     * Use a scanner to read data line by line
+     * 
      */
     Scanner s = new Scanner(new File(resource.toURI())); // throws FileNotFoundException, URISyntaxException
     List<String> noun = new ArrayList<>();  
