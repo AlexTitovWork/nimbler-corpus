@@ -37,12 +37,12 @@ public class CorpusDataClassTest {
     }
 
     /**
-     * Test of readDataLemmaPosFormat()    method, of class CorpusDataClass.
+     * Test of readDataLemmaPosFormat method, of class CorpusDataClass.
      */
     @Test
     public void testReadDataLemmaPosFormat() throws Exception {
-        System.out.println("read Data Lemma Position Format");
-        CorpusDataClass instance = new CorpusDataClass();
+        System.out.println("readDataLemmaPosFormat");
+        CorpusDataClass instance = new CorpusDataClass("FiltredEntiresToDataBase.txt");
         instance.readDataLemmaPosFormat();
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -51,21 +51,22 @@ public class CorpusDataClassTest {
     /**
      * Test of readDataLemmaColl method, of class CorpusDataClass.
      */
-    @Test
-    public void testReadDataLemmaColl() throws Exception {
-        System.out.println("readDataLemmaColl");
-        CorpusDataClass instance = new CorpusDataClass();
-        instance.readDataLemmaColl();
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
+//    @Test
+//    public void testReadDataLemmaColl() throws Exception {
+//        System.out.println("readDataLemmaColl");
+//        CorpusDataClass instance = new CorpusDataClass();
+//        instance.readDataLemmaColl();
+//        // TODO review the generated test code and remove the default call to fail.
+//        //fail("The test case is a prototype.");
+//    }
      /**
+     * Collect and writed product_category format model for nimbler to directory
      * Test of readDataLemmaColl method, of class CorpusDataClass.
      */
     @Test
     public void testreadDataProductToSetCategory() throws Exception {
         System.out.println("readDataProductToSetCategory");
-        CorpusDataClass instance = new CorpusDataClass();
+        CorpusDataClass instance = new CorpusDataClass("FiltredEntiresToDataBase.txt");
         instance.readDataProductToSetCategory();
         // TODO review the generated test code and remove the default call to fail.
         System.out.println("The test case is a prototype, ok! ");
