@@ -70,7 +70,7 @@ public class CompositePatternTest {
      * Test of generateDataTree method, of class CompositeClass.
      */
     @Test
-    public void testProductSteramLoad() {
+    public void testProductStreamLoad() {
               
         
         System.out.println("Get noun collection");
@@ -87,23 +87,23 @@ public class CompositePatternTest {
       
       
        
-        CompositeClass p1 = new CompositeParentElement("<food>");
-        p1. setStartTag("<food>");
-        parentTag. addChildTag(p1);
+        CompositeClass parentTag = new CompositeParentElement("<food>");
+        parentTag. setStartTag("<food>");
+        parentTag.addChildTag(parentTag);
        
         CompositeClass child1 = new CompositeElement("<meat>");
         child1. setStartTag("<meat>");
       
         child1. setTagBody("<fruit>");
        
-        p1. addChildTag(child1);
+        parentTag. addChildTag(child1);
        
         child1 = new CompositeElement("<beef>");
         child1. setStartTag("<beef>");
      
         child1. setTagBody("<chicken>");
        
-        p1. addChildTag(child1);
+        parentTag. addChildTag(child1);
         parentTag.generateDataTree();
 
      
