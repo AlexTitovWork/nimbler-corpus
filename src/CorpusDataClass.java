@@ -38,7 +38,12 @@ public class CorpusDataClass {
     this.fileName = fileName;
     }
   
-  
+  /**
+   * Read data from vocabrary file ( in example "FiltredEntiresToDataBase.txt")
+   * for parse it on separately words, by part (for example "v", "n") of speech. 
+   * @throws FileNotFoundException
+   * @throws URISyntaxException 
+   */
   public void readDataLemmaPosFormat() throws FileNotFoundException, URISyntaxException {
     URL resource = getClass().getClassLoader().getResource("META-INF/resources/" + this.fileName);
     System.out.println("URL " + resource);
