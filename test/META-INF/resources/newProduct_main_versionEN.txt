@@ -1,0 +1,133 @@
+
+category_fruits
+Abiu
+Apricot
+Avocado
+Quince
+Aki
+Alibertia
+Alycha
+Ambarella
+American apricot
+American walnut
+pineapple
+Annona mountain
+Annona is prickly
+Annona mesh
+Annona Cheimola
+Annona scaly
+Antelian gooseberry
+Orange
+Arabica
+Araz
+Peanut
+Watermelon ordinary
+Astrocaryum prickly
+Atimoya
+African prickly cucumber
+African tamarind
+Bacau
+Eggplant
+Balia
+
+category_vegetables
+
+subcategory_leafy_vegetables
+White cabbage
+Red cabbage
+Kohlrabi
+Broccoli
+Brussels sprouts
+Savoy cabbage
+Chinese cabbage
+Cauliflower
+Chard
+Parsley
+Dill
+Basil
+Marjoram
+Savory
+Mint
+Melissa
+Oregano
+Tarragon
+Sorrel
+Spinach
+Fennel
+Lovestock
+Cress salad
+Endive
+Lettuce
+
+subcategory_passionate
+tomato
+Vegetable pepper
+Eggplant
+Saraha edible
+
+subcategory_pumpkin
+cucumber
+Zucchini
+Squash
+Pumpkin
+Chaiot
+Chinese bitter gourd
+Laguaria
+Wax pumpkin
+Cyclenter
+Luff
+Trichozant
+Antillian cucumber
+Melotry rough
+Tladianta dubious
+Zucchini
+Squash
+Pumpkin
+Chaiot
+Chinese bitter gourd
+Laguaria
+Wax pumpkin
+Cyclenter
+Luff
+Trichozant
+Antillian cucumber
+Melotry rough
+Tladianta dubious
+
+subcategory_flower
+Artichoke
+
+subcategory_Beans
+Peas
+Beans
+Vigna asparagus
+Winged beans
+
+subcategory_Root
+Potatoes
+Carrot
+Beet
+Radish
+Radish
+Horseradish
+Celery
+Parsnip
+Sweet potato
+Yam
+Manioc
+Tarot
+Yakon
+Jerusalem artichoke
+Turnip
+Swede
+Hikama
+Chinese artichoke
+Scorzonera Spanish
+Kozloborodnik posrelelistny
+Burdock
+Lotus
+Kislica tuberous
+Nasturtium tuberiform
+Shellfish Ulycone
+Arracacha
+Maca Peruvian
