@@ -10,7 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * File for storage category and accordingly subcategory 
+ * to recursive search.
  * @author Alex Titov
  * @since 0.0.1 created 27/06/2017
  */
