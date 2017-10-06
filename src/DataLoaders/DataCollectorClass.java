@@ -11,6 +11,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import utils.CategoryClass;
 
 /*
  * Help class for CorpusDataClass.java
@@ -75,6 +76,7 @@ public class DataCollectorClass {
         List<String> category = new ArrayList<>();
         List<String> subcategory = new ArrayList<>();
 
+        CategoryClass ContainerCategory = new CategoryClass();
 
         int lineNumber = 0;
         while (s.hasNextLine()) {
@@ -93,9 +95,12 @@ public class DataCollectorClass {
               //System.out.println( element + " " );
             if(token[0].equals("category") && token.length > 1 ){ // true
                   add = category.add(token[1]);
+                  ContainerCategory.setCategory(token[1]);
                 //System.out.println(add);
-            }else (token[0].equals("subcategory") && token.length > 1 ){ // true
-        }
+            }else if(token[0].equals("subcategory") && token.length > 1 ){ // true
+            
+                ContainerCategory.setSubcategory(token[1]);
+            }
             else if(token[0].equals("meat") && token.length < 2)
             {  
                 /**

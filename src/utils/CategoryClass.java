@@ -30,6 +30,7 @@ public class CategoryClass {
     }
     public void setSubcategory(String subcategory){
         
+        this.subcategory.add(category);
         this.subcategory.add(subcategory);
     }
     public List<String> getSubcategory(){
