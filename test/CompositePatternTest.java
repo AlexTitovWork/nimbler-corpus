@@ -14,7 +14,9 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author user
+ * @author Alex Titov 
+ * @since 06.10.2017
+ * alexeytitovwork@gmail.com
  */
 public class CompositePatternTest {
     
