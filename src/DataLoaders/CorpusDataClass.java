@@ -1,3 +1,5 @@
+package DataLoaders;
+
 
 import java.io.*;
 import java.net.URISyntaxException;
@@ -17,9 +19,9 @@ import java.util.*;
  * the terms of either a Standard Software Source Code License Agreement or a
  * Standard Product License Agreement. A copy of either Agreement can be
  * obtained upon request from: alexeytitovwork@gmail.com
-/**
- *
+
  * @author Alex Titov  alexeytitovwork@gmail.com
+ * @sience 01/09/2017
  */
 public class CorpusDataClass {
   /**
@@ -106,7 +108,8 @@ public class CorpusDataClass {
     System.out.println("Remember this is only firs variant of product list.\n");
 
     List<Double> testResult = new ArrayList<>();
-    String fileData = "selectedNoun.dat";
+//    String fileData = "selectedNoun.dat";
+    String fileData = "newProductNounSelected.dat";
     String dir = CorpusDataClass.class.getResource("/Meta-inf/resources/").getFile();
     OutputStream os = new FileOutputStream(dir + fileData);
       try (PrintStream printStream = new PrintStream(os)) {
@@ -195,8 +198,17 @@ public class CorpusDataClass {
           printStream.close();
         }
   }
-    /**
-  * Internal method to read datas included category and products from list.
+   
+ /**
+  * The method read datas from file "ProductsFood.txt" in form:
+  * FOOD
+  * foodstuff-продукты
+  * tin-консервнаябанка
+  * This form ncluded category and products name, it list for write to data base PostgreSQL
+  * and save all items in data base nimbles format, only in English:
+  * foodstuff_food
+  * tin_food
+  * in file: "newProduct.dat"
   * @throws FileNotFoundException
   * @throws URISyntaxException 
   */
@@ -266,6 +278,7 @@ public class CorpusDataClass {
             */
             add = category.add(next);
         }
+        
         if(token.length > 1) 
         {
             /**
@@ -274,8 +287,7 @@ public class CorpusDataClass {
             add = products.add(token[0] + "_"+ category.get(category.size() -1) );
         }
     }
-      
-    
+
     System.out.println("\nThis list contains most popular category and producs form food store");
     System.out.println("Remember this is only firs variant of product list.\n");
 
@@ -283,20 +295,15 @@ public class CorpusDataClass {
     String fileData = "newProduct.dat";
     String dir = CorpusDataClass.class.getResource("/Meta-inf/resources/").getFile();
     OutputStream os = new FileOutputStream(dir + fileData);
-    final PrintStream printStream = new PrintStream(os);
-     
-     
-     for(String element : products){
-         /**
-         * Print only noun form resource data
-         */
-      //  System.out.println(element);
-        printStream.println(element);
-         
-         
-     }
-     
-    printStream.close();
+      try (PrintStream printStream = new PrintStream(os)) {
+          products.stream().forEach((element) -> {
+              /**
+               * Print only noun form resource data
+               */
+              //  System.out.println(element);
+              printStream.println(element);
+        });
+}
      
   }
   
