@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="asus" name="CorpusDataClassTest" skipped="0" tests="2" time="0.442" timestamp="2017-10-06T10:38:43">
+<testsuite errors="0" failures="0" hostname="asus" name="DataLoaders.LemmaReaderAndPreparatorTest" skipped="0" tests="1" time="1.113" timestamp="2017-10-18T20:35:58">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="RU" />
@@ -63,7 +63,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner CorpusDataClassTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Git_repo_GPL\nimbler-corpus\build\test\results\TEST-CorpusDataClassTest.xml crashfile=C:\Git_repo_GPL\nimbler-corpus\build\junitvmwatcher3622329740303852433.properties propsfile=C:\Git_repo_GPL\nimbler-corpus\build\junit4968986025956347091.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DataLoaders.LemmaReaderAndPreparatorTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Git_repo_GPL\nimbler-corpus\build\test\results\TEST-DataLoaders.LemmaReaderAndPreparatorTest.xml crashfile=C:\Git_repo_GPL\nimbler-corpus\build\junitvmwatcher3039837321374221108.properties propsfile=C:\Git_repo_GPL\nimbler-corpus\build\junit3258822041179339268.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -426,8 +426,7 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.1\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="CorpusDataClassTest" name="testReadDataLemmaPosFormat" time="0.364" />
-  <testcase classname="CorpusDataClassTest" name="testreadDataProductToSetCategory" time="0.006" />
+  <testcase classname="DataLoaders.LemmaReaderAndPreparatorTest" name="testReadDataLemmaPosFormat" time="0.925" />
   <system-out><![CDATA[readDataLemmaPosFormat
 URL file:/C:/Git_repo_GPL/nimbler-corpus/build/test/classes/META-INF/resources/FiltredEntiresToDataBase.txt
 
@@ -4321,13 +4320,6 @@ agentry
 demonstrability
 broadtail
 jackscrew
-readDataProductToSetCategory
-URL file:/C:/Git_repo_GPL/nimbler-corpus/build/test/classes/META-INF/resources/ProductsFood.txt
-
-This list contains most popular category and producs form food store
-Remember this is only firs variant of product list.
-
-The test case is a prototype, ok! 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

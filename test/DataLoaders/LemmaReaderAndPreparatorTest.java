@@ -6,7 +6,6 @@ package DataLoaders;
  * and open the template in the editor.
  */
 
-import DataLoaders.CorpusDataClass;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -40,6 +39,7 @@ public class LemmaReaderAndPreparatorTest {
 
     /**
      * Test of readDataLemmaPosFormat method, of class CorpusDataClass.
+     * @throws java.lang.Exception
      */
     @Test
     public void testReadDataLemmaPosFormat() throws Exception {

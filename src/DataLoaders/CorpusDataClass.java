@@ -203,7 +203,7 @@ public class CorpusDataClass {
   * The method read datas from file "ProductsFood.txt" in form:
   * FOOD
   * foodstuff-продукты
-  * tin-консервнаябанка
+  * tin-консервная банка
   * This form ncluded category and products name, it list for write to data base PostgreSQL
   * and save all items in data base nimbles format, only in English:
   * foodstuff_food
@@ -296,14 +296,14 @@ public class CorpusDataClass {
     String dir = CorpusDataClass.class.getResource("/Meta-inf/resources/").getFile();
     OutputStream os = new FileOutputStream(dir + fileData);
       try (PrintStream printStream = new PrintStream(os)) {
-          products.stream().forEach((element) -> {
-              /**
-               * Print only noun form resource data
-               */
-              //  System.out.println(element);
-              printStream.println(element);
-        });
-}
+            products.stream().forEach((element) -> {
+                /**
+                 * Print only noun form resource data
+                 */
+                //  System.out.println(element);
+                printStream.println(element);
+          });
+        }   
      
   }
   
