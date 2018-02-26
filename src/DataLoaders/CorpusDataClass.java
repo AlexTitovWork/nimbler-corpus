@@ -253,7 +253,7 @@ public class CorpusDataClass {
             * Add some new category from parsing text
             */
             add = category.add(next);
-        }else if(token[0].equals("vegatables") && token.length < 2)
+        }else if(token[0].equals("vegetables") && token.length < 2)
         {
             /**
             * Add some new category from parsing text
