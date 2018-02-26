@@ -9,14 +9,12 @@ package DataLoaders;
 import CategoryTreeStorage.CompositeElement;
 import CategoryTreeStorage.CompositeClass;
 import CategoryTreeStorage.CompositeParentElement;
-import DataLoaders.CorpusDataClass;
 import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -87,10 +85,10 @@ public class CompositePatternTest {
         
       
         
-        for(String Element: sequence){
-            CompositeClass parentTag = new CompositeParentElement("<"+ Element + ">");
-            parentTag. setStartTag("<"+ Element + ">");     
-        }
+         sequence.stream().forEach((Element) -> {
+             CompositeClass parentTag = new CompositeParentElement("<"+ Element + ">");
+             parentTag. setStartTag("<"+ Element + ">");
+        });
             
       
       
